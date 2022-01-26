@@ -7,7 +7,9 @@ a{
 .container-fluid{
 	margin: 0 auto;
 	padding: 0;
+	position: relative;
 }
+
 .textsm{
 	font-size: 12px;
 }
@@ -37,7 +39,7 @@ a{
 	background-color: rgb(255,194,33);
 }
 .bg3{
-	background-image: url(../images/about-bg.png);
+	background-image: url(../images/about-bg.png), linear-gradient(to top, lightblue ,white,white);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	min-height: 400px; 
@@ -50,14 +52,27 @@ a{
 
 }
 .bg4{
-	background-image: url(../images/client-bg.png),url(../images/bootstrap.png);
+	background-image: url(../images/client-bg.png);
 	background-repeat: no-repeat;
-	background-size: 100% 100%, 50% 50%;
+	background-size: 100% 100%
 }
 .smallcontainer{
-	width: 50%;
+	width: 55%;
 	padding: 6% 0%;
 	margin: 0 auto;
+}
+.zoomimg{
+	display: inline-block;
+	overflow: hidden;
+}
+.zoomimg img{
+    transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
+}
+.zoomimg img:hover{
+	transform: scale(1.025,1.025) !important;
+	-webkit-transform: scale(1.025,1.025);
+	opacity: 0.5 !important;
 }
 .bg5{
 	background-image: url(../images/service-icon-03.png), url(../images/regular-table-top.png);
