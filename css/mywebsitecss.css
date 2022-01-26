@@ -9,7 +9,9 @@ a{
 	padding: 0;
 	position: relative;
 }
-
+.pointer{
+	cursor: pointer;
+}
 .textsm{
 	font-size: 12px;
 }
