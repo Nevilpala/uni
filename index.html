@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	 <!-- Required metaatags -->
-    	  <meta charset="utf-8">
-    	  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Required metaatags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	 <!-- Bootstrap CSS -->
-	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	
-	 <!--  Font Awesome -->
-  	  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-	 
-	 <!--  Custom CSS -->
-	  <link rel="stylesheet" type="text/css" href="./css/mywebsitecss.css">
-	
-	<title>MY WORK</title>
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+   <!--  Font Awesome -->
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+   <!--  Custom CSS -->
+   <link rel="stylesheet" type="text/css" href="./css/mywebsitecss.css">
+
+   <title></title>
 </head>
-<body class="bg">
-<!--------------------------------------------------------------------------------------------------->
-<!--------------------------------------------------------------------------------------------------->
-		<div class="text-uppercase px-1 fixed-top" data-bs-toggle="modal" data-bs-target="#menu"><span class="fw-bolder"><i class="fas fa-bars"></i></span></div>
+<body>
+	<div class="text-uppercase px-1 fixed-top"><span class="fw-bolder"><i class="fas fa-bars" data-bs-toggle="modal" data-bs-target="#menu"></i></span></div>
 
 
 
@@ -48,141 +46,305 @@
 		</div>
 	</div>
 
-	<!-- --------------------------------------    header   ------------------------------------ -->
+<!------------------------------------------------------------------------------------------>
 
-	<header class="container-fluid headerbg" id="home">
-		<nav class="navbar navbar-expand-lg navbar-light mynav">
-            <div class="container  rounded-pill">
-                <div class="navbar-brand text-center" >
-                    <div class="logo fw-bolder h2  ps-4 ">
-                       <span>M</span>Y <span>W</span>ORK
-                       <!-- <img src="./image/logo2.png" class="img-fluid"> -->
+    <header class="container" id="home">
+        <nav class="navbar navbar-expand-md navbar-light mynav">
+            <div class="container-fluid">
+                <div class="navbar-brand text-center w-25">
+                    <div class="logo">
+                       <img src="./images/logo.jpg" class="img-fluid" width="40%">
                     </div>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                	<span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end navbaar" id="navbar1">
-                    <div class="navbar-nav align-items-center">
-                        <a class="nav-link active text-uppercase navhov" aria-current="page" href="#template"><span>Bootstrap</span></a>
-                        <a class="nav-link text-uppercase navhov" href="#c"><span>C</span></a>
-                        <a class="nav-link text-uppercase navhov" href="#"><span>Javascript</span></a>
-                        <a class="nav-link text-uppercase navhov" href="#"><span>contact</span></a>
+                <div class="collapse navbar-collapse navbaar w-75 justify-content-end align-items-center" id="navbar1" >
+                    <div class="navbar-nav align-items-center textsm-md">
+                        <a class="nav-link active text-uppercase px-4" aria-current="page" href="#"><span class="fw-bolder">Home</span></a>
+                        <a class="nav-link text-uppercase px-4" href="#"><span class="fw-bolder">About</span></a>
+                    	<div class="nav-link dropdown mydrop">
+                    		<span class="dropdown-toggle fw-bolder" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    			PROJECT
+                    		</span>
+
+                    		<ul class="dropdown-menu mydropdown"  aria-labelledby="dropdownMenuLink">
+                    			<li><a class="dropdown-item" href="#template">BOOTSTRAP</a></li>
+                    			<li><a class="dropdown-item" href="#c">C</a></li>
+                    			<li><a class="dropdown-item" href="#js">JAVASCRIP</a></li>
+                    		</ul>
+                    	</div>
+                        </a>
+                        <a class="nav-link text-uppercase px-4" href="#"><span class="fw-bolder">Blog</span></a>
+                        <a class="nav-link text-uppercase px-4" href="#" data-bs-toggle="modal" data-bs-target="#signup"><span class="fw-bolder">signup</span></a>
+                        <a class="nav-link text-uppercase px-4 btn btn-warning text-light" href="#"  data-bs-toggle="modal" data-bs-target="#login"><span class="fw-bolder">login</span></a>
                     </div>
                 </div>
             </div>
         </nav>
-	</header>
+    </header>
+    <!-------------------     login    ----------------------->
 
-<!----------------------------------       ABOUT      ------------------------------------------>
-<!-- 	
-	<section class=" text-center container mybtn">
-			<a href="#template"><button class="fw-bolder btn btn-outline">Bootstrap</button></a>
-			<a href="#C"><button class="fw-bolder btn btn-outline">C</button></a>
-			<a href="#Javascript"><button class="fw-bolder btn btn-outline">Javascript</button></a>
-		
-	</section> -->
+                <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title fw-bolder" id="exampleModalLabel"><img src="./images/logo.jpg" class="imgs img-fluid" width="25%"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center bggrey">
+                                <h2><span class="yellowcolor">U</span>SER <span class="yellowcolor">L</span>OGIN</h2><hr class="hr opacity-10 w-75" style="margin: 0px auto;">
+                                <input type="email" placeholder="Email" class="w-75 rounded-pill p-1 px-3 mt-5 borderyellow">
+                                <input type="password" placeholder="Password" class="w-75 rounded-pill p-1 px-3 my-4     borderyellow">
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn w-75 yellowbg login" data-bs-dismiss="modal">LOGIN</button>
+                                <p class="w-100 text-center textsm">OR</p>
+                                <button type="button" class="btn btn-secondary w-75 " data-bs-dismiss="modal">LOGIN WITH GOOGLE</button>
+                                <button type="button" class="btn btn-primary w-75 " data-bs-dismiss="modal">LOGIN WITH FACEBOOK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-------------------------------------------------------->
 
-<!-- --------------------------------      BOOTSTRAP      ------------------------------------------>
-	
-	<section class="container idboot bootbg" id="template">
-		<hr>
-		<div class="beforeafterline rounded-pill">
-			<h1 class="text-center fs-1 fw-bolder"><span class="overflow-visible">BOOTSTRAP</span></h1>
-		</div>
+                            <!-------------------     signup    ----------------------->
 
-		<div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-4">
-			<div class="col">
-				<a href="./website/html/5/index.html" class="templateimg">
-					<div class="card h-100 zoomimg">
-						<img src="./templete/5.png" class="card-img-top">
-					</div>
-				</a>
-			</div>
-			<div class="col">
-				<a href="./website/html/10/index.html" class="templateimg">
-					<div class="card h-100 zoomimg">
-						<img src="./templete/10.png" class="card-img-top">
-					</div>
-				</a>
-			</div>
-			<div class="col">
-				<a href="./website/html/18/boot18.html" class="templateimg">
-					<div class="card h-100 zoomimg">
-						<img src="./templete/18.png" class="card-img-top">
-					</div>
-				</a>
-			</div>
-			<div class="col">
-				<a href="./website/html/8/index.html" class="templateimg">
-					<div class="card h-100 zoomimg">
-						<img src="./templete/8.png" class="card-img-top">
-					</div>
-				</a>
-			</div>
-			<div class="col">
-				<a href="./website/html/1/index.html" class="templateimg">
-					<div class="card h-100 zoomimg">
-						<img src="./templete/1.png" class="card-img-top">
-					</div>
-				</a>
-			</div>
-			<div class="col">
-				<a href="./website/html/10/index.html" class="templateimg">
-					<div class="card h-100 w-100 zoomimg">
-						<!-- <img src="./templete/10.png" class="card-img-top"> -->
-					</div>
-				</a>
-			</div>
-			<div class="col">
-				<a href="./website/html/18/boot18.html" class="templateimg">
-					<div class="card h-100 w-100 zoomimg">
-						<!-- <img src="./templete/18.png" class="card-img-top"> -->
-					</div>
-				</a>
-			</div>
-			<div class="col">
-				<a href="./website/html/8/boot18.html" class="templateimg">
-					<div class="card h-100 w-100 zoomimg">
-						<!-- <img src="./templete/18.png" class="card-img-top"> -->
-					</div>
-				</a>
-			</div>
-		</div>
-	</section>
+                <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog bg-light">
+                        <div class="modal-content ">
+                            <div class="modal-header">
+                                <h5 class="modal-title fw-bolder" id="exampleModalLabel"><img src="./images/logo.jpg" class="imgs img-fluid" width="25%"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center bggrey">
 
-<!---------------------------------------------      C      ------------------------------------------>
+                                    <h2><span class="yellowcolor">SIGN</span> UP</h2>
+                                    <p class="textsm">If Already Have an Account?<span class="yellowcolor pointer" data-bs-toggle="modal" data-bs-target="#login">LOGIN</span></p>
 
-	<section id="c" class="container C">
-		<hr>
-		<div class="beforeafterline rounded-pill">
-			<h1 class="text-center fs-1 fw-bolder"> <span>C</span> </h1>
-		</div>
+                                <hr class="hr opacity-10 w-75" style="margin: 0px auto;">
 
-		<div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-4 cbody">
+                                <input type="text" placeholder="Name" class="w-75 rounded-pill p-1 px-3 my-4  borderyellow">
+                                <input type="email" placeholder="Email" class="w-75 rounded-pill p-1 px-3 mb-3 borderyellow">
+                                <input type="password" placeholder="Password" class="w-75 rounded-pill p-1 px-3 my-3 borderyellow">
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn w-75 yellowbg login" data-bs-dismiss="modal">SIGN UP</button>
+                                <p class="w-100 text-center textsm">OR</p>
+                                <button type="button" class="btn btn-secondary w-75 " data-bs-dismiss="modal">LOGIN WITH GOOGLE</button>
+                                <button type="button" class="btn btn-primary w-75 " data-bs-dismiss="modal">LOGIN WITH FACEBOOK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-------------------------------------------------------->
+
+    <section class="container-fluid bg2">
+        <div class="container">
+            <!-- <img src="./images/banner-right-image.png" class="float-end img-fluid" width="50%"> -->
+            <div class="row">
+                <div class="col-lg col-sm-12 align-self-center text-center">
+                    <h1 class="display-2 fw-bolder text-uppercase">welcome to <br>
+                    <span class="text-primary fst-italic">my</span> <span class="text-danger fst-italic">website</span></h1>
+                </div>
+                <div class="col-lg col-sm-12 h-100">
+                    <img src="./images/banner-right-image.png" class="float-end img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid bg3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg col-sm-12">
+                    <img src="./images/about-left-image.png" class="img-fluid"> 
+                </div>
+                <div class="col-lg col-sm-12 align-self-center">
+                    <div class="row g-3">
+                       
+                        <div class="col-lg-6 col-sm-12 colhover">
+                            <a href="#template">
+                                <img src="./images/bootstrap.png" class="float-start  img-fluid rounded-circle p-1 bg-light" width="15%">
+                                <h5 class="ms-5 text-shadow text-light pt-1">BOOTSTRAP</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 colhover">
+                            <a href="#c">
+                                <img src="./images/c.png" class="float-start p-1 bg-light  img-fluid rounded-circle" width="14%">
+                                <h5 class="ms-5 text-shadow text-light pt-1">C PROGRAMING</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 colhover">
+                            <a href="#js">
+                                <img src="./images/js.png" class="float-start  img-fluid rounded-circle" width="15%">
+                                <h5 class="ms-5 text-shadow text-light pt-1">JAVA SCRIP</h5>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 colhover">
+                            <a href="#other">
+                                <img src="./images/service-icon-hover-01.png" class="float-start  img-fluid rounded-circle" width="15%">
+                                 <h5 class="ms-5 text-shadow text-light pt-1">OTHER</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+<!------------------------------------------BOOTSTRAP------------------------------------------>
+
+    <section class="container-fluid bg4" id="template">
+    	<!-- <div class="align-items-center ">
+    		<img src="./images/bootstrap.png" class="backimg img-fluid" width="25%">
+    	</div> -->
+    	<div class="row smallcontainer align-items-center">
+    		<div class="col-lg col-sm-12 col-md-4">
+    			<hr class="opacity-100" style="height: 5px; color: red">
+    		</div>
+    		<div class="col-lg-auto col-sm-12 col-md-auto">
+    			<h1 class="text-center text-light fw-bolder">BOOTSTRAP</h1>
+    		</div>
+    		<div class="col-lg col-sm-12 col-md-4">
+    			<hr class="opacity-100" style="height: 5px; color: red">
+    		</div>
+    	</div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="container smallcontainer">	
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item px-3 active">
+                        <div class="row">
+                            <div class="col">
+                                <a href="./website/html/8/index.html" class="templateimg">
+                                    <div class="card h-100 zoomimg">
+                                        <img src="./templete/8.png" class="card-img-top">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="./website/html/5/index.html" class="templateimg">
+                                    <div class="card h-100 zoomimg">
+                                        <img src="./templete/5.png" class="card-img-top">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="./website/html/18/boot18.html" class="templateimg">
+                                    <div class="card h-100 zoomimg">
+                                        <img src="./templete/18.png" class="card-img-top">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item px-3">
+                        <div class="row">
+                            <div class="col">
+                                <a href="./website/html/1/index.html" class="templateimg">
+                                    <div class="card h-100 zoomimg">
+                                        <img src="./templete/1.png" class="card-img-top">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="./website/html/10/index.html" class="templateimg">
+                                    <div class="card h-100 zoomimg">
+                                        <img src="./templete/10.png" class="card-img-top">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="./website/html//.html" class="templateimg">
+                                    <div class="card h-100 zoomimg">
+                                        <img src="./templete/0.png" class="card-img-top">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item px-3">
+                        <div class="row">
+                            <div class="col">
+                                <a href="./website/html//index.html" class="templateimg">
+                                    <div class="card h-100 zoomimg">
+                                        <img src="./templete/0.png" class="card-img-top">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="./website/html//index.html" class="templateimg">
+                                    <div class="card h-100 zoomimg">
+                                        <img src="./templete/0.png" class="card-img-top">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="./website/html//index.html" class="templateimg">
+                                    <div class="card h-100 zoomimg">
+                                        <img src="./templete/0.png" class="card-img-top">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+<!------------------------------------     C     --------------------------------------->
+
+    <section class="container-fluid bg5 bggrey2" id="c">
+    	<div class="container ">
+    		<div class="row smallcontainer align-items-center">
+    		<div class="col-lg col-sm-12 col-md-4">
+    			<hr class="opacity-100" style="height: 5px; color: red">
+    		</div>
+    		<div class="col-lg col-sm-12 col-md-4">
+    			<h1 class="text-center text-primary fw-bolder">C</h1>
+    		</div>
+    		<div class="col-lg col-sm-12 col-md-4">
+    			<hr class="opacity-100" style="height: 5px; color: red">
+    		</div>
+    	</div>
+    	<div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-4 cbody py-5">
 			<div class="col ctext">
-					<button class="btn btn-dark myCbtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#simpleif" aria-controls="offcanvasRight">Simple IF</button>
+					<button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#simpleif" aria-controls="offcanvasRight">Simple IF</button>
 			</div>
 			<div class="col ctext">
-				<button class="btn btn-dark myCbtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#elseif" aria-controls="offcanvasRight">Else IF</button>
+				<button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#elseif" aria-controls="offcanvasRight">Else IF</button>
 			</div>
 			<div class="col ctext">
-				<button class="btn btn-dark myCbtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#conditional" aria-controls="offcanvasRight">Conditional Operator</button>
+				<button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#conditional" aria-controls="offcanvasRight">Conditional Operator</button>
 			</div>
 			<div class="col ctext">
-				<button class="btn btn-dark myCbtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#switch" aria-controls="offcanvasRight">Switch-Case</button>
+				<button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#switch" aria-controls="offcanvasRight">Switch-Case</button>
 			</div>
 			<div class="col ctext">
-				<button class="btn btn-dark myCbtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#loopwhile" aria-controls="offcanvasRight">Loop-While</button>
+				<button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#loopwhile" aria-controls="offcanvasRight">Loop-While</button>
 			</div>
 			<div class="col ctext">
-				<button class="btn btn-dark myCbtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#loopfor" aria-controls="offcanvasRight">Loop-For</button>
+				<button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#loopfor" aria-controls="offcanvasRight">Loop-For</button>
 			</div>
 			<div class="col ctext">
-				<button class="btn btn-dark myCbtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#Pattern" aria-controls="offcanvasRight">Pattern</button>
+				<button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#Pattern" aria-controls="offcanvasRight">Pattern</button>
 			</div>
 			<div class="col ctext">
-				<button class="btn btn-dark myCbtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#array" aria-controls="offcanvasRight">Array</button>
+				<button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#array" aria-controls="offcanvasRight">Array</button>
 			</div>
 		</div>
 
@@ -490,11 +652,9 @@
 				
 			</div>
 		</div>
-</section>
+    </section>
 
 
-
-</section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
