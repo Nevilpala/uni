@@ -138,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-                <!-------------------------------------------------------->
+                <!------------------------------        alert     ------------->
 
                 <div class="modal fade" id="aboutmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 	<div class="modal-dialog">
@@ -361,10 +361,12 @@
     	</div>
     	<div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-4 cbody py-5">
 			<div class="col ctext">
-					<button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#simpleif" aria-controls="offcanvasRight">Simple IF</button>
+					<button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="modal" data-bs-target="#aboutmodal" aria-controls="offcanvasRight">Simple IF</button>
+                    <!-- <button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#simpleif" aria-controls="offcanvasRight">Simple IF</button> -->
 			</div>
 			<div class="col ctext">
-				<button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#elseif" aria-controls="offcanvasRight">Else IF</button>
+				<button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="modal" data-bs-target="#aboutmodal" aria-controls="offcanvasRight">Else IF</button>
+                <!-- <button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#elseif" aria-controls="offcanvasRight">Else IF</button> -->
 			</div>
 			<div class="col ctext">
 				<button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#conditional" aria-controls="offcanvasRight">Conditional Operator</button>
@@ -379,16 +381,19 @@
 				<button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#Pattern" aria-controls="offcanvasRight">Pattern</button>
 			</div>
 			<div class="col ctext">
-				<button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#array" aria-controls="offcanvasRight">Array</button>
+				<!-- <button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#array" aria-controls="offcanvasRight">Array</button> -->
+                <button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="modal" data-bs-target="#aboutmodal" aria-controls="offcanvasRight">Array</button>
+                 
 			</div>
             <div class="col ctext">
-                <button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#array2" aria-controls="offcanvasRight">Array 2D</button>
+                <button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="modal" data-bs-target="#aboutmodal" aria-controls="offcanvasRight">Array 2D</button>
+                <!-- <button class="btn btn-dark myCbtn w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#array2" aria-controls="offcanvasRight">Array 2D</button> -->
             </div>
 		</div>
 
 													<!-- simple if -->
 
-		<div class="offcanvas offcanvas-end" tabindex="-1" id="simpleif" aria-labelledby="offcanvasRightLabel">
+		<div class="offcanvas offcanvas-end about" tabindex="-1" id="simpleif" aria-labelledby="offcanvasRightLabel">
 			<div class="offcanvas-header">
 				<h4 id="offcanvasRightLabel" class="text-danger fw-bolder">Simple IF</h4>
 				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -399,7 +404,7 @@
 		</div>
 													<!-- Else If -->
 
-		<div class="offcanvas offcanvas-end" tabindex="-1" id="elseif" aria-labelledby="offcanvasRightLabel">
+		<div class="offcanvas offcanvas-end about" tabindex="-1" id="elseif" aria-labelledby="offcanvasRightLabel">
 			<div class="offcanvas-header">
 				<h4 id="offcanvasRightLabel" class="text-danger fw-bolder">Else If</h4>
 				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -957,7 +962,7 @@
 
 													<!-- Array -->
 
-		<div class="offcanvas offcanvas-end" tabindex="-1" id="array" aria-labelledby="offcanvasRightLabel">
+		<div class="offcanvas offcanvas-end about" tabindex="-1" id="aboutmodal" aria-labelledby="offcanvasRightLabel">
 			<div class="offcanvas-header">
 				<h4 id="offcanvasRightLabel" class="text-danger fw-bolder">Array</h4>
 				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -968,7 +973,8 @@
 		</div>
                                                     <!-- Array 2D-->
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="array2" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas offcanvas-end about" tabindex="-1" id="array2" aria-labelledby="offcanvasRightLabel">
+
             <div class="offcanvas-header">
                 <h4 id="offcanvasRightLabel" class="text-danger fw-bolder">Array 2D</h4>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
