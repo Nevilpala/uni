@@ -1,0 +1,137 @@
+/**{
+	border: 1px solid red;
+}*/
+a{
+	text-decoration: none;
+}
+.container-fluid{
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+.pointer{
+	cursor: pointer;
+}
+.textsm{
+	font-size: 12px;
+}
+.xsmall{
+	font-size: 10px;
+}
+.yellowcolor{
+	color: rgb(255,194,33);
+}
+.yellowbg{
+	background-color: rgb(255,194,33);
+}
+.bg2{
+	background-image: url(../images/baner-dec-left.png),url(../images/baner-dec-right.png);
+/*	min-height: 400px;*/
+	background-repeat: no-repeat;
+	background-position: left center,right center;
+	background-size: auto 100%,auto 100%;
+}
+.mynav a:hover{
+	background-color: red;
+	color: white !important;	
+}
+.mydrop:hover{
+	background-color: red;
+}
+.mydropdown a:hover{
+	background-color: rgb(255,194,33);
+}
+.bg3{
+	background-image: url(../images/contact-bg.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.colhover{
+	padding: 2%;
+}
+.colhover:hover{
+	/*background-image: linear-gradient(to right, darkred, rgba(255,255,255,0.15));*/
+	background-image: linear-gradient(to right, rgb(202,0,1), red, rgba(255,255,255,0.5));
+	border-radius: 0% 30%;
+}
+.bg4{
+	background-image: 	url(../images/top-bg.png), 
+						url(../images/bottom-bg.png), 
+						linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+						url(../image/contact-bg.jpg);
+	background-repeat: no-repeat;
+	background-size:  100% 2%,100% 2%, 100% 100%, 100% 100%;
+	/*background-color: red;*/
+	padding: 3% 0%;
+	/*background-color: rgba(255,255,255,0.5);*/
+	background-position: top, bottom;
+}
+.bg4 h1{
+	color: blue;
+}
+.smallcontainer{
+	width: 55%;
+	padding: 6% 0%;
+	margin: 0 auto;
+}
+.zoomimg{
+	display: inline-block;
+	overflow: hidden;
+}
+.zoomimg img{
+    transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
+}
+.zoomimg img:hover{
+	transform: scale(1.025,1.025) !important;
+	-webkit-transform: scale(1.025,1.025);
+	opacity: 0.5 !important;
+}
+.bg5{
+	background-image: url(../images/service-icon-03.png), url(../image/banner-bg-01.jpg);
+	/*background-image: url(../images/service-icon-03.png);*/
+	background-repeat: no-repeat,no-repeat;
+	min-height: 200px;
+	background-size: 10% 30%,100% 100%;
+	/*background-size: 10% 30%;*/
+	background-position: center center;
+}
+.bggrey2{
+	/*background-color: rgba(255,194,33,0.5);*/
+
+}
+.comingsoon{
+	position: absolute;
+	top:0;
+	color: white;
+	height: 100%;
+	width: 100%;
+	 transition: all ease-in-out 400ms;
+    -webkit-transition: all ease-in-out 400ms;
+}
+.comingsoon span{
+	position: relative;
+	top:50%;
+	left: 15%;
+	height: 100%;
+	width: 100%;
+	font-family: monospace;
+	font-weight: bolder;
+	font-size: 20px;
+	z-index: 9999;
+}
+.comingsoon:hover{
+	/*color: black;*/
+	background-color: grey;
+	transform: scale(1.1,1.1);
+	-webkit-transform: scale(1.1,1.1);
+	opacity: 0.5;
+}
+.blurlink{
+	padding: 2% 0%;
+	/*border-top: 1px solid rgba(0,0,0,0.5);*/
+	/*border-bottom: 1px solid rgba(0,0,0,0.4);*/
+}
+.blurlink:hover{
+	background-color: rgba(0,0,0,0.2);
+}
