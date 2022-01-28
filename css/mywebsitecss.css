@@ -31,6 +31,10 @@ a{
 	background-position: left center,right center;
 	background-size: auto 100%,auto 100%;
 }
+nav .myactive{
+	border-bottom: 3px solid rgb(255,194,33);
+	padding-bottom: 10px;
+}
 .mynav a:hover{
 	background-color: red;
 	color: white !important;	
@@ -43,7 +47,7 @@ a{
 }
 .bg3{
 	background-image: url(../images/contact-bg.png);
-	background-size: 100% 100%;
+	background-size: 100% 120%;
 	background-repeat: no-repeat;
 }
 .colhover{
@@ -55,19 +59,18 @@ a{
 	border-radius: 0% 30%;
 }
 .bg4{
-	background-image: 	url(../images/top-bg.png), 
-						url(../images/bottom-bg.png), 
-						linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
-						url(../image/contact-bg.jpg);
+	background-image: 	/*linear-gradient(to right, rgba(255,255,255,0.2),rgba(255,255,255,0),rgba(255,255,255,0), rgba(255,255,255,0.2)),*/
+						/*url(../image/bg05.jpg);*/
+						/*url(../image/contact-bg.jpg);*/
+						url(../image/bg06.jpg);
+	background-size: 100%;
 	background-repeat: no-repeat;
-	background-size:  100% 2%,100% 2%, 100% 100%, 100% 100%;
-	/*background-color: red;*/
+	background-size: 100% 100%;
 	padding: 3% 0%;
-	/*background-color: rgba(255,255,255,0.5);*/
-	background-position: top, bottom;
+	background-color: red;
 }
 .bg4 h1{
-	color: blue;
+	color: white;
 }
 .smallcontainer{
 	width: 55%;
