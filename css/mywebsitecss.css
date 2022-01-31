@@ -175,10 +175,11 @@ nav .myactive{
 .footbg{
 	/*background-color: #232323;*/
 	background-image: url(../images/contact-bg.png);
-	background-size: 100% 120%;
+	background-size: 100% 150%;
 	background-repeat: no-repeat;
+	background-position: center center;
 	color: white;
-	padding: 7% 0%;
+	padding: 5% 0%;
 }
 .footbg a{
 	color: white;
@@ -221,3 +222,6 @@ textarea{
 	cursor: pointer;
 	transition: all 0.2s;
 }		
+.roundeda{
+	border-radius: 30px;
+}
