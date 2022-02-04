@@ -109,6 +109,8 @@ nav .myactive{
 .zoomimg{
 	display: inline-block;
 	overflow: hidden;
+	position: relative;
+	background-color: white;
 }
 .zoomimg img{
     transition: all ease-in-out 500ms;
@@ -118,6 +120,17 @@ nav .myactive{
 	transform: scale(1.025,1.025) !important;
 	-webkit-transform: scale(1.025,1.025);
 	opacity: 0.5 !important;
+}
+.loading{
+	position: absolute;
+	z-index:-1;
+	top: 42%;
+	left:0%;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background-color: white;
 }
 .bg5{
 	background-image: url(../images/service-icon-03.png), url(../image/banner-bg-01.jpg);
