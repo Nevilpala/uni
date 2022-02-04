@@ -68,8 +68,10 @@ nav .myactive{
 	background-size: 100% 100%;
 	padding: 0;
 	margin: 0;
-	background-color: rgba(0,0,0,0.1);
+	background-color: rgba(0,0,0,0.15);
 	position: relative;
+	/*background-image:url(../image/bg05.jpg);*/
+	/*background: rgba(0,0,0,0) url(../image/bg06.jpg) repeat fixed center 0 / cover;*/
 	display: block;
 	padding: 3% 0%;
 	z-index: 1;
@@ -83,15 +85,15 @@ nav .myactive{
 	left: 0;
 	bottom: 0;
 	right: 0;
-	/*background-color: rgba(244,116,88,0.8);*/
-	background-image:url(../image/back.jpg);
+			/*background-color: rgba(244,116,88,0.8);*/
+	background-image:url(../image/quote-bg-v2.jpg);
 	background-size: 100% 100%,100% 100%;
 	background-repeat: no-repeat;
-	margin: 5px auto;
+	margin: 4px auto;
 	background-position: center center;
 	border-radius: 10px;
 	z-index: -1;
-	height: 98%;
+	height: 99%;
 	width: 70%;
 }
 .upper{
@@ -119,9 +121,9 @@ nav .myactive{
 }
 .bg5{
 	background-image: url(../images/service-icon-03.png), url(../image/banner-bg-01.jpg);
-	/*background-image: url(../images/service-icon-03.png);*/
+	/*background-image: url(../image/Amazing.jpg);*/
 	background-repeat: no-repeat,no-repeat;
-	min-height: 200px;
+	/*min-height: 200px;*/
 	background-size: 10% 30%,100% 100%,100%;
 	/*background-size: 10% 30%;*/
 	background-position: center center;
@@ -224,4 +226,8 @@ textarea{
 }		
 .roundeda{
 	border-radius: 30px;
+}
+.ullink li{
+	display: block;
+
 }
