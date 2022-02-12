@@ -55,24 +55,57 @@ a{
 	background-color: rgb(239,239,239);
 	/*padding: 2% 0;*/
 	position: relative;
-}
-.arrowtop{
-	position: absolute;
 	top: 0;
-	left: 100;
+	left: 0;
 	right:0;
 	bottom: 0;
-	z-index: ;
+}
+.arrowtop{
+	position: relative;
+	top: 0;
+	left: 0;
+	right:0;
+	bottom: 0;
+	/*z-index: 9999999;*/
+	margin: 0 -80px;
 }
 .arrowtop2{
 	position: relative;
-	z-index: 99999;
+	/*z-index: 9999;*/
+	margin: 0 -48px;
 }
-/*ul li{
+.arrowtop3{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 00px;
+	bottom: 0;
+	margin: 0 -21px;
+}
+header ul li{
 	display: inline-block;
 	padding: 0 1%;
 	font-size: 15px;
-}*/
+}
+header ul li a{
+	font-size: 12px;
+	margin-top: 10px;
+}
+header ul li a:hover{
+	color: yellow!important;
+}
+.searchabsolute2{
+	position: relative;
+	right: 0px;
+	left: 5%;
+	top: 0;
+	bottom: 0;
+	background-color: rgb(15,5,47)!important;
+}
+.inputserach{
+	background-color: rgb(15,5,47)!important;
+	border:0;
+}
 .bg1{
 	background-image: url(../images/banner2.jpg);
 	background-size: 100% 100%;
