@@ -26,10 +26,10 @@ a{
 }
 .bg2{
 	background-image: url(../images/baner-dec-left.png),url(../images/baner-dec-right.png);
-/*	min-height: 400px;*/
 	background-repeat: no-repeat;
 	background-position: left center,right center;
 	background-size: auto 100%,auto 100%;
+	background-color: rgba(255,255,255);
 }
 nav .myactive{
 	border-bottom: 3px solid rgb(255,194,33);
@@ -54,15 +54,10 @@ nav .myactive{
 	padding: 2%;
 }
 .colhover:hover{
-	/*background-image: linear-gradient(to right, darkred, rgba(255,255,255,0.15));*/
 	background-image: linear-gradient(to right, rgb(202,0,1), red, rgba(255,255,255,0.5));
 	border-radius: 0% 30%;
 }
 .bg4{
-	/*background-image: 	linear-gradient(to bottom,white 5%,rgba(0,0,0,0.1) 90%);*/
-						/*url(../image/bg05.jpg);*/
-						/*url(../image/contact-bg.jpg);*/
-						/*url(../image/bg06.jpg);*/
 	background-repeat: no-repeat;
 	padding: 0;
 	margin: 0;
@@ -71,7 +66,6 @@ nav .myactive{
 	background-image:url(../image/slider-left-dec.jpg),url(../image/about-right-dec.jpg);
 	background-position: left center,right center;
 	background-size: auto 100%,auto 100%;
-	/*background: rgba(0,0,0,0) url(../image/bg06.jpg) repeat fixed center 0 / cover;*/
 	display: block;
 	padding: 3% 0%;
 	z-index: 1;
@@ -136,15 +130,8 @@ nav .myactive{
 	background-color: white;
 }
 .bg5{
-	/*background-image: url(../images/service-icon-03.png), url(../image/c2.jpg);*/
-	/*background-image: url(../image/c2.jpg);*/
 	background-repeat: no-repeat,no-repeat;
 	background-color: rgb(24,0,82);
-	/*min-height: 200px;*/
-	/*background-size: 10% 30%,100% 100%;*/
-	/*background-size: 100% 100%;*/
-	/*background-position: center top;*/
-
 	background-image:url(../images/baner-dec-left.png),url(../images/baner-dec-right.png);
 	background-position: left center,right center;
 	background-size: auto 100%,auto 100%;
@@ -156,10 +143,6 @@ nav .myactive{
 	background-image: url(../image/cmd.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-}
-.bggrey2{
-	/*background-color: rgba(255,194,33,0.5);*/
-
 }
 .comingsoon{
 	position: absolute;
@@ -190,8 +173,6 @@ nav .myactive{
 }
 .blurlink{
 	padding: 2% 0%;
-	/*border-top: 1px solid rgba(0,0,0,0.5);*/
-	/*border-bottom: 1px solid rgba(0,0,0,0.4);*/
 }
 .blurlink:hover{
 	background-color: rgba(0,0,0,0.2);
@@ -202,7 +183,6 @@ nav .myactive{
 	list-style: none;
 }
 .footbg{
-	/*background-color: #232323;*/
 	background-image: url(../images/contact-bg.png);
 	background-size: 100% 150%;
 	background-repeat: no-repeat;
@@ -217,7 +197,6 @@ nav .myactive{
 .input2{
 	color: black;
 	border: 0;
-	/*background-color: #343434;*/
 	background-color: rgba(244,116,88,0.8);
 	margin-bottom: 13px;
 }
@@ -246,7 +225,6 @@ textarea{
 	transition: all 0.2s;
 }
 .linkhover2 li:hover{
-	/*color: rgb(164,198,59);*/
 	color: darkred;
 	cursor: pointer;
 	transition: all 0.2s;
@@ -256,5 +234,15 @@ textarea{
 }
 .ullink li{
 	display: block;
+}
+.firstloading{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 100%;
+	z-index: -50;
+	padding-top: 20%;
 
 }
