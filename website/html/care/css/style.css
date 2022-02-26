@@ -17,13 +17,13 @@ div{
 	display: block;
 }
 .paddingy{
-	padding: 6% 0%!important;
+	padding: 7% 0%!important;
 }
 .paddingtop{
-	padding-top: 6%!important;
+	padding-top: 3%!important;
 }
 .paddingbot {
-	padding-bottom: 6%!important;
+	padding-bottom: 3%!important;
 }
 
 /*HEADER --------------------------------------------------------------------------------------*/
@@ -50,6 +50,9 @@ nav ul li a{
 }
 .mynav ul{
 	align-items: center;
+}
+nav a.logo1,nav ul li.logo2{
+	cursor: pointer;
 }
 
 /*section1------------------------------------------------------------------------------------------*/
@@ -252,6 +255,10 @@ textarea{
 
 /*footer------------------------------------------------------------------------------------*/
 
+footer{
+	margin-top: 25px;
+	background-color: rgba(0,0,0,0.05	);	
+}
 footer ul{
 	list-style-type: none;
 	padding: 0!important;
@@ -278,20 +285,6 @@ footer div.social i:hover{
 	color: #247cff;
 	cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .myd-md-none{
 	display: none;
