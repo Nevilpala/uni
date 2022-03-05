@@ -24,9 +24,10 @@ div{
 }
 body{
 	background-image: url(../img/bg-01.jpg);
-	background-size: 120% 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 100vh;
+	background-position: center center;
 }
 
 /*HEADER---------------------------------------------------------------------------*/
@@ -152,7 +153,9 @@ header nav div.mynav ul li a:hover .square, header nav div.mynav ul li a.active 
 }
 
 
-
+footer{
+	margin-top: 35px;
+}
 
 
 
