@@ -65,6 +65,8 @@ header nav div.mynav{
 	padding: 20px 10px;
 	justify-content: center;
 	text-align: center;
+	position: relative;
+	z-index: 99999999;
 }
 
 header nav div.mynav ul li a{
@@ -89,6 +91,10 @@ header nav div.mynav ul li a:hover .square, header nav div.mynav ul li a.active 
 	background-color: grey;
 	margin: 0 auto;
 	z-index: 9999;
+}
+header nav button i{
+	color: black!important;	
+	font-size: 50px;
 }
 
 /*SECTION1-------------------------------------------------------------------------*/
@@ -132,7 +138,7 @@ header nav div.mynav ul li a:hover .square, header nav div.mynav ul li a.active 
 .section3 .email-text{
 	background-color: white;
 	height: 100%;
-	padding: 70px 40px;
+	padding: 65px 40px;
 	font-family: arial;
 }
 .section3 .email-text p{
@@ -141,18 +147,15 @@ header nav div.mynav ul li a:hover .square, header nav div.mynav ul li a.active 
 .section3 input{
 	width: 100%;
 	padding: 7px 20px;
-	
+}
+.section3 .input-email{
+	border: 2px solid grey;
 }
 .section3 .input-submit{
 	background-color: #247cff;
 	border: 2px solid #247cff;
 	color: white;
-
-
-
 }
-
-
 footer{
 	margin-top: 35px;
 }
@@ -180,5 +183,17 @@ footer{
 	}
 	header nav a.logo i{
 		margin-right: 0!important;
+	}
+}
+@media screen and (max-width: 425px)
+{
+	header nav div.mynav ul li a:hover .square, header nav div.mynav ul li a.active .square{
+		left: 49%!important;
+	}
+	.section1{
+		color: grey!important;
+	}
+	header nav div.mynav{
+		background-color :rgba(255, 255, 255, 0.95)!important;
 	}
 }
