@@ -1,0 +1,209 @@
+a{
+	text-decoration: none;
+}
+div{
+	display: block;
+}
+h1,h2,h3,h4,h5,h6,p,span,a,img,div,i,input,textarea,body,header,nav,ul,li,nav,header,.img-fluid{
+	margin: 0;
+	padding: 0;
+}
+.container-fluid{
+	padding: 0 ;
+}
+.custom-container{
+	padding: 0 30px;
+
+}
+.v-center{
+	display: flex!important;
+	align-items: center!important;
+}
+.greencolor{
+	color: #99FF66;
+}
+.greenbg{
+	background-color: #99FF66;
+}
+body{
+	background-image: url(../img/tm-astro-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+}
+.paddingy{
+	padding: 7% 0;
+}
+.padding-sm-y{
+	padding: 4% 0;
+}
+/*HEADER ===========================================================================================*/
+
+header nav a{
+	color: white!important;
+}
+.custom_nav ul li{
+	position: relative;
+	cursor: pointer;
+}
+.custom_nav ul li a{
+	font-size: 25px;
+	margin: 0 15px;
+	padding: 20px 0;
+	text-align: center;
+	border-bottom: 1px solid white;
+}
+.custom_nav ul li a span{
+	padding: 0px 50px;
+}
+.custom_nav ul li div.circle{
+	position: absolute;
+	padding: 8px;
+	background-color: white;
+	border-radius: 50%;
+	top: 70px;
+	left: 45%;
+}
+.custom_nav ul li.actives div.circle{
+	background-color: #99FF66;
+}
+.custom_nav ul li.actives a span{
+	color: #99FF66;
+}
+.custom_nav ul li.actives a{
+	border-color: #99FF66;
+}
+
+/*FIRST-SLIDE ====================================================================*/
+
+.circle_title{
+	display: flex;
+	align-items: center;
+}
+.circle_title .circle{
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	background-color: white;
+}
+.circle_title .circle_line{
+	padding: 1.3px;
+	background-color: white;
+	width: 100%;
+}
+.slide-content{
+	display: flex;
+}
+.first-content{
+	background-color: rgba(0,0,0,0.4);
+	padding: 25px;
+	line-height: 30px;
+}
+.first-content h2{
+	padding: 10px 0;
+}
+.first-content p{
+	padding: 15px 0;
+	font-size: 20px;
+}
+.third_slide{
+	width: 75%;
+}
+.fourth_content{
+	display: flex;
+}
+.fourth_content div{
+	padding-top: 50px;
+	padding: 25px;
+}
+.form-contact .input-text{
+	width: 100%;
+	background-color: transparent;
+	border:0;
+	border-bottom: 2px solid white;
+	padding: 9px;
+	padding-left: 0;
+	margin-bottom: 15px;
+	font-size: 20px;
+	color: white!important;
+
+} 
+.form-contact .input-text::placeholder{
+	color: white;
+	opacity: 1;
+}
+.form-contact .input-text:hover{
+	border: 0;
+	border-bottom: 2px solid white;
+}
+.form-contact textarea{
+	height: 120px;
+}
+.form-contact input.submit{
+	padding: 8px 20px;
+	background-color: white;
+	border:0;
+	float: right;
+}
+.contact-detail h3{
+	padding: 10px;
+}
+.contact-detail p{
+	padding: 10px;
+	font-size: 17px;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+	.custom_nav ul{
+		width: 50%!important;
+		float: right;
+		background-color: rgba(0,0,0,0.4);
+		margin-top: 0;
+		padding-bottom: 25px;
+	}
+	.custom_nav ul li a{
+		font-size: 15px;
+	}
+	.custom_nav ul li div.circle{
+		top: 55px;
+		left: 45%;
+	}
+	.custom_nav ul li div.circle{
+		left: 49%;
+	}
+	.slide-content{
+		display: block;	
+		align-items: center;
+	}
+	.slide-content img{
+		margin: 25px auto;
+		padding: 0!important;
+	}
+	.first-content h2{
+		font-size: 28px;
+	}
+	.first-content p{
+		font-size: 15px;
+	}
+	.third_slide{
+		width: 100%;
+	}
+	.fourth_content{
+		display: block;
+	}
+
+
+}
+@media screen and (max-width: 425px){
+	.custom_nav ul{
+		float: none;
+		width: 100%!important;
+	}
+	.home-img{
+		margin: 0 auto;
+		padding: 0;
+	}
+}
