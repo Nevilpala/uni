@@ -1,3 +1,4 @@
+
 a{
 	text-decoration: none;
 }
@@ -134,8 +135,15 @@ textarea{
 	color: rgb(164,198,59);
 	cursor: pointer;
 	transition: all 0.2s;
-}		
+}
+.mypagination ul li a{
+	color: #232323;
 
+}		
+.mypagination ul li.actives a{
+	background-color: #232323;
+	color: white;
+}
 
 
 
