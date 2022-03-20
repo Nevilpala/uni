@@ -219,8 +219,9 @@ footer{
 	background-image: url(../images/templatemo_footer_bg.jpg);
 	background-repeat: no-repeat;
 	min-height: 25vh;
-	background-size: cover;
+	background-size: 100% 100%;
 	margin-top: 60px;
+	background-position: center center;
 	padding: 40px;
 	color: #8a8a79;
 }
