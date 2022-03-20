@@ -56,7 +56,6 @@ header nav{
 	line-height: 45px;
 	width: 100%;
 	position: relative;
-	overflow: hidden;
 }
 header nav ul li a{
 	color: #ffe64e!important;
@@ -106,6 +105,7 @@ div.sec1_bottom{
 	width: 100%;
 	text-align: center;
 	height: 100%;
+	color: #8a8a79;
 }
 
 /*SECTION-2 ==============================================================================================*/
@@ -163,6 +163,14 @@ div.sec1_bottom{
 	padding: 20px;
 	padding-right: 35px;
 
+}
+.email-form input{
+	color: black;
+	background-color: white;
+	border: 1px solid  #aca7a7;
+}
+.email-form input::placeholder{
+	color: rgba(0,0,0,0.8);
 }
 .email-form input:last-child{
 	margin-top: 15px;
@@ -226,9 +234,12 @@ footer{
 .footer_link span{
 	padding: 0 20px;
 }
+footer p{
+	font-size: 14px;
+}
 footer p:last-child{
-	font-size: 13px;
 	padding-top: 15px;
+	font-size: 12px;
 }
 
 
@@ -252,6 +263,13 @@ footer p:last-child{
 	}
 	.bullet-img{
 		padding: 0px 10px;
+	}
+	footer p{
+		font-size: 13px;
+	}
+	footer p:last-child{
+		padding-top: 15px;
+		font-size: 11px;
 	}
 }
 @media screen and (max-width: 425px){
