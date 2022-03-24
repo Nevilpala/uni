@@ -188,8 +188,16 @@
 
 }
 
+/*================================================         CONTACT      =============================================*/
 
-
+.contact_form{
+	width: 75%;
+	margin: 0 auto;
+	align-items: center;
+}
+.contact_form textarea{
+	height: 200px;
+}
 
 
 
