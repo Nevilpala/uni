@@ -17,6 +17,13 @@
    <title></title>
 </head>
 <body>
+    <div class="start-loading">
+        <div class="spinner-border text-secondary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+         <h4 class="ps-2">Loading..</h4>
+    </div>
+    <div style="position: fixed; background-color: white; z-index: -99999999999999; height: 100vh; width: 100%;"></div>
 	<div class="text-uppercase px-1 fixed-top"><span class="fw-bolder" data-bs-toggle="modal" data-bs-target="#menu"><i class="fas fa-bars" ></i></span></div>
 
 
@@ -47,60 +54,61 @@
 	</div>
 
 <!-----------------------------------       HEADER        --------------------------------------->
+    <div class="bg-white">
+        <header class="container bg-white" id="home">
+            <nav class="navbar navbar-expand-md navbar-light mynav p-0 m-0">
+                <div class="container-fluid ">
+                    <div class="navbar-brand text-center w-25">
+                        <div class="logo">
+                           <img src="./images/logo.jpg" class="img-fluid" width="115">
+                        </div>
+                    </div>
+                    <button class="navbar-toggler bg-danger " type="button" data-bs-toggle="collapse" data-bs-target="#navbar1" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                         <i class="fas fa-bars text-light"></i>
+                    </button>
 
-    <header class="container" id="home">
-        <nav class="navbar navbar-expand-md navbar-light mynav p-0 m-0">
-            <div class="container-fluid ">
-                <div class="navbar-brand text-center w-25">
-                    <div class="logo">
-                       <img src="./images/logo.jpg" class="img-fluid" width="115">
+                    <div class="collapse navbar-collapse navbaar w-75 justify-content-end align-items-center" id="navbar1" >
+                        <div class="navbar-nav align-items-center textsm-md act">
+                            <a class="nav-link text-uppercase px-4 myactive" aria-current="page" href="#"><span class="fw-bolder ">Home</span></a>
+                            <a class="nav-link text-uppercase px-4" href="#" data-bs-toggle="modal" data-bs-target="#aboutmodal"><span class="fw-bolder">About</span></a>
+                        	<div class="nav-link dropdown mydrop">
+                        		<span class="dropdown-toggle fw-bolder" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        			PROJECT
+                        		</span>
+
+                        		<ul class="dropdown-menu mydropdown"  aria-labelledby="dropdownMenuLink">
+                        			<li><a class="dropdown-item" href="#template">BOOTSTRAP</a></li>
+                        			<li><a class="dropdown-item" href="#c">C</a></li>
+                        			<li><a class="dropdown-item " href="#js">JAVASCRIP</a></li>
+                        		</ul>
+                        	</div>
+                            <a class="nav-link text-uppercase px-4" href="#contact"><span class="fw-bolder">Contact</span></a>
+                            <a class="nav-link text-uppercase px-4" href="#" data-bs-toggle="modal" data-bs-target="#signup"><span class="fw-bolder">signup</span></a>
+                            <a class="nav-link text-uppercase px-4 btn btn-warning text-light" href="#"  data-bs-toggle="modal" data-bs-target="#login"><span class="fw-bolder">login</span></a>
+                        </div>
                     </div>
                 </div>
-                <button class="navbar-toggler bg-danger " type="button" data-bs-toggle="collapse" data-bs-target="#navbar1" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- <span class="navbar-toggler-icon"></span> -->
-                     <i class="fas fa-bars text-light"></i>
-                </button>
+            </nav>
+        </header>
 
-                <div class="collapse navbar-collapse navbaar w-75 justify-content-end align-items-center" id="navbar1" >
-                    <div class="navbar-nav align-items-center textsm-md act">
-                        <a class="nav-link text-uppercase px-4 myactive" aria-current="page" href="#"><span class="fw-bolder ">Home</span></a>
-                        <a class="nav-link text-uppercase px-4" href="#" data-bs-toggle="modal" data-bs-target="#aboutmodal"><span class="fw-bolder">About</span></a>
-                    	<div class="nav-link dropdown mydrop">
-                    		<span class="dropdown-toggle fw-bolder" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                    			PROJECT
-                    		</span>
+    <!---------------------------------------------------------------------------------------------------->
 
-                    		<ul class="dropdown-menu mydropdown"  aria-labelledby="dropdownMenuLink">
-                    			<li><a class="dropdown-item" href="#template">BOOTSTRAP</a></li>
-                    			<li><a class="dropdown-item" href="#c">C</a></li>
-                    			<li><a class="dropdown-item " href="#js">JAVASCRIP</a></li>
-                    		</ul>
-                    	</div>
-                        <a class="nav-link text-uppercase px-4" href="#contact"><span class="fw-bolder">Contact</span></a>
-                        <a class="nav-link text-uppercase px-4" href="#" data-bs-toggle="modal" data-bs-target="#signup"><span class="fw-bolder">signup</span></a>
-                        <a class="nav-link text-uppercase px-4 btn btn-warning text-light" href="#"  data-bs-toggle="modal" data-bs-target="#login"><span class="fw-bolder">login</span></a>
+        <section class="container-fluid bg2 bg-white">
+            <div class="container">
+                <!-- <img src="./images/banner-right-image.png" class="float-end img-fluid" width="50%"> -->
+                <div class="row">
+                    <div class="col-lg col-sm-12 align-self-center text-center">
+                        <h1 class="display-2 fw-bolder text-uppercase">welcome to <br>
+                        <span class="text-primary fst-italic">my</span> <span class="text-danger fst-italic">website</span></h1>
+                    </div>
+                    <div class="col-lg col-sm-12 h-100">
+                        <img src="./images/banner-right-image.png" class="float-end img-fluid bg-white">
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
-
-<!---------------------------------------------------------------------------------------------------->
-
-    <section class="container-fluid bg2">
-        <div class="container">
-            <!-- <img src="./images/banner-right-image.png" class="float-end img-fluid" width="50%"> -->
-            <div class="row">
-                <div class="col-lg col-sm-12 align-self-center text-center">
-                    <h1 class="display-2 fw-bolder text-uppercase">welcome to <br>
-                    <span class="text-primary fst-italic">my</span> <span class="text-danger fst-italic">website</span></h1>
-                </div>
-                <div class="col-lg col-sm-12 h-100">
-                    <img src="./images/banner-right-image.png" class="float-end img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
 <!----------------------------------------------------------------------------------------->
 
