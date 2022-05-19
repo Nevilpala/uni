@@ -1,3 +1,22 @@
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0db5c0; 
+}
+
 a{
 	text-decoration: none;
 }
@@ -28,7 +47,8 @@ body{
 	top: 0;	
 	left: 0!important;
 	width: 100%;
-	margin: 0!important;
+	margin: 0;
+	margin-left: -5px;
 	z-index:9999;
 	transition-duration: 0.5s;
 }
