@@ -22,24 +22,23 @@ a{
 body{
 	background-color: #202020;
 	overflow: hidden;
-}	
-header{
-	position: relative;
-}
-nav{
-	background-color: white!important;
 }
 .head-fixed{
 	position: fixed!important;
-	top: 0;
-	z-index:99999;
+	top: 0;	
+	left: 0!important;
+	width: 100%;
+	margin: 0!important;
+	z-index:9999;
 	transition-duration: 0.5s;
+}
+.head-fixed nav ul{
 }
 .header-block{	
 	position: sticky!important;
 	top: 0;
 	left: 0;
-	z-index: 999999!important;
+	z-index: 99999!important;
 	align-items: center;
 }
 .bg-start{
@@ -59,7 +58,7 @@ nav .nav-pills .nav-link{
 	color: rgba(0,0,0,0.7);
 }
 nav .nav-pills .nav-link.active{
-	background-color: #0db5c0;
+	background-color: #0db5c0!important;
 }
 .header-block ul li a{
 	font-size: 16px;
