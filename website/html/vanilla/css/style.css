@@ -302,6 +302,9 @@ button.orangebutton:hover, a.orangebutton:hover{
 	.mycontainer{
 		width: 100%;
 	}
+	.myscrollspy-menu{
+		scroll-snap-type:none;
+	}
 }
 @media screen and (max-width: 576px){
 	.content_corosol p{
