@@ -31,6 +31,12 @@ h1,h2,h3,h4,h5,h6,p,span,a,img,div,i,input,textarea,body,header,nav,ul,li,nav,he
 .textsm{
 	font-size: 13px;
 }
+section{
+	scroll-behavior: smooth;
+
+}
+
+
 
 /*HEADER =====================================================================================================*/
 
@@ -42,15 +48,21 @@ header{
 	position: fixed;
 	margin-top: -100px;
 	text-align: right;
-
 	z-index: 99999;
+}
+header nav ul {
+	display: block!important;
 }
 header ul li{
 	padding: 6px 0;
 }
 header ul li a{
 	color: white!important;
-	display: flex;
+	display: flex!important;	
+	flex-direction: row;
+	align-items: center;
+	margin: 0!important;
+	padding: 0!important;
 }
 header .header-circle{
 	font-size: 6px;
@@ -58,20 +70,20 @@ header .header-circle{
 	padding: 5px;
 	margin: 4px 0;
 }
-header ul li.actives .header-circle{
+header nav .nav-pills .nav-link.active{
+
+	background-color: transparent!important;
+}
+header nav .nav-pills .nav-link.active .header-circle{
 	font-size: 8px;
 	border: 2px solid white;
 	padding: 2px;
-}
-header ul li.header_active a{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	background-color: transparent!important;
 }
 header ul li a .header-link{
 	display: none;		
-    -webkit-transition: all .2s;
-    transition: all .2s;
+	-webkit-transition: all .2s;
+	transition: all .2s;
 	width: 100%;
 	padding: 2px 12px;
 	font-size: 12px;
@@ -88,8 +100,16 @@ header ul li:hover a .header-link{
 	color: black;
 	opacity: 1;
 }
-
-
+.myscrollspy-menu{
+	height: 100vh;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+}
+section{
+	scroll-snap-align: start;
+}
 /*SECTION-1 =====================================================================================================*/
 
 .section1{
@@ -129,7 +149,7 @@ button.orangebutton:hover, a.orangebutton:hover{
 	background-color: rgb(222, 109, 33);
 	color: white;
 }
-	
+
 /*SECTION-2 =====================================================================================================*/
 
 .section2{
@@ -175,7 +195,6 @@ button.orangebutton:hover, a.orangebutton:hover{
 	background-attachment: fixed;
 	min-height: 100vh;
 	position: relative;
-	padding: 11.5% 0;
 }
 .cards-body{
 	text-align: center;
