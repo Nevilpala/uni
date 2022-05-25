@@ -1,0 +1,243 @@
+
+.fix{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999999;
+}
+.fix li a{
+	padding: 0 20px;
+}
+	.starter-section{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	/*background-color: #273053;*/
+	z-index: 99999;
+	background-image:	url(../img/html.png),
+						url(../img/css.png),
+						url(../img/js.png),
+						url(../img/c.png),
+						url(../img/logo-icon.png),
+						linear-gradient(to right,red ,blue );
+	background-repeat: no-repeat;
+	background-size: 150px,150px,150px,150px,150px,cover;
+	background-position:top left,top right,bottom left, bottom right,center;
+	animation-name: start;
+	animation-duration: 5s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	display: none;
+}
+@keyframes start{
+	from{
+	}
+	to{
+		transform: scale(0.1);
+		opacity: 0;
+		height: 0;
+		z-index: -1;
+	}
+}
+
+
+header{
+	/*background-color: rgba(0,0,0,0.5);*/
+	position: fixed;
+	top: 40%;
+	right: 30px;
+	z-index: 999;
+	border-radius: 20px;
+	text-align: center;
+}
+nav ul li a{
+	color: white!important;
+	font-family: cursive;
+	display: flex!important;
+	justify-content: space-between;
+	align-items: flex-end!important;
+	font-size: 13px;
+}
+nav ul li a .nav-hover{
+	background-color: rgba(0,0,0,0.8);
+	width: 100px;
+	margin-right: 15px;
+	text-align: center;
+	border-radius: 50px;
+}
+.nav-hover{
+	display: none;
+}
+nav ul{
+	background-color: rgba(0,0,0,0.5);
+	display: block!important;
+	border-radius: 20px;
+}
+.home-icon{
+	width: 10px;
+	height: 10px;
+	margin: 5px 0;
+}
+.menu-icon{
+	width: 10px;
+	height: 10px;
+	margin: 5px 0;
+	font-size: 12px;
+}
+.menu-icon i{
+	color: white;
+}
+nav ul li:nth-child(2) .nav-link.active .menu-icon i{
+	color: red!important;
+}
+.stop-f{
+	display: none;
+}
+nav  ul:hover .nav-hover{
+	display: block;
+}
+nav ul .nav-link.active {
+	background-color: transparent!important;
+}
+nav ul .nav-link.active .nav-hover{
+	font-weight: bold!important;
+	color: red!important;
+}
+nav ul .nav-link.active .menu-icon i.stop{
+	display: none;
+}
+nav ul .nav-link.active .menu-icon i.stop-f{
+	display: block;
+}
+.scroll-menu{
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+section{
+	min-height: 80vh;
+	overflow: hidden!important;
+	position: relative;
+}
+#home{
+	/*background-image: url(../img/gallery/emp-12.jpg);*/
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;	
+} 	
+.header{
+	background-color: rgba(0,0,0,0.3);
+	padding: 15px 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+	display: none;
+}
+.welcome{
+	height: 100%;
+	align-items: center;
+	background-color: rgba(0,0,0,0.5);
+}
+.welcome div{
+	padding: 5%;
+	color: white;
+}
+
+/*PROJECT*/
+
+#project{
+	background-image: url(../image/bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: auto!important;
+}
+.web-logo{
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.web-logo img{
+	width: 200px;
+	height: 225px;
+}
+@media screen and (max-width:576px){
+	.web-logo img{
+		width: 100px;
+		height: 125px;
+	}
+}
+
+/*BOOTSTRAP*/
+
+#bootstrap{
+	background-image: url(../img/services-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.circle_title{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+.circle_title .circle-icon{
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	border-radius: 50%;
+}
+.circle_title .circle_line{
+	height: 2px;
+	background-color: white;
+	width: 100%;
+}
+
+/*C*/
+
+
+.smallcontainer{
+	width: 55%;
+	padding: 6% 0%;
+	margin: 0 auto;
+}
+.bg5{
+	background-repeat: no-repeat,no-repeat;
+	background-color: rgb(24,0,82);
+	background-image:url(../images/baner-dec-left.png),url(../images/baner-dec-right.png);
+	background-position: left center,right center;
+	background-size: auto 100%,auto 100%;
+}
+.bg5 h1{
+	color: white;
+}
+.cmd{
+	background-image: url(../image/cmd.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.blurlink{
+	padding: 2% 0%;
+}
+.blurlink:hover{
+	background-color: rgba(0,0,0,0.2);
+}

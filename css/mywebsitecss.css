@@ -140,7 +140,7 @@ nav .myactive{
 .zoomimg img{
     transition: all ease-in-out 500ms;
     -webkit-transition: all ease-in-out 500ms;
-    max-width: 100%;
+    max-width: 100%!important;
     min-height: 100%;
 }
 .zoomimg img:hover{
