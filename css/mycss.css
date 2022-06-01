@@ -22,6 +22,11 @@ h1,h2,h3,h4,h5,h6,p,span,a,img,div,i,input,textarea,body,header,nav,ul,li,nav,he
 	display: flex!important;
 	justify-content: center!important;
 }
+
+.w-end{
+	display: flex!important;
+	justify-content: flex-end!important;
+}
 .vw-center{
 	display: flex!important;
 	align-items: center!important;
@@ -36,7 +41,13 @@ h1,h2,h3,h4,h5,h6,p,span,a,img,div,i,input,textarea,body,header,nav,ul,li,nav,he
 .textsm{
 	font-size: 13px;
 }
-
+.dp-none{
+	display: none;
+}
+.ul{
+	padding-left: 0;
+	list-style-type: none!important;
+}
 /*DISPLAY-NONE*/
 @media screen and (max-width: 768px){
 	.dp-md-none{
@@ -134,7 +145,7 @@ button.btn-menu{
 
 	transform:translate(0px, 17.5px);
 	animation-name: hi; 
-	animation-duration: 1s;
+	animation-duration: .5s;
 	animation-delay: .5s;
 	animation-fill-mode: forwards;
 }
@@ -148,7 +159,7 @@ button.btn-menu{
 .box-btn input:checked~.btn-nav::before{
 	transform: translate(0px, -17.5px);
 	animation-name: hi2; 
-	animation-duration: 1s;
+	animation-duration: .5s;
 	animation-delay: .5s;
 	animation-fill-mode: forwards;
 }
@@ -168,7 +179,7 @@ button.btn-menu{
 
 
 /*ZOOMING-IMAGE*/
-.zoomimg{
+.zoom_img{
 	display: inline-block;
 	overflow: hidden;
 	position: relative;
@@ -176,14 +187,24 @@ button.btn-menu{
 	height: 100%;
 	width: 100%;
 }
-.zoomimg img{
+.zoom_img img{
 	transition: all ease-in-out 500ms;
 	-webkit-transition: all ease-in-out 500ms;
 	max-width: 100%;
 	min-height: 100%;
 }
-.zoomimg img:hover{
+.zoom_img:hover img{
 	transform: scale(1.025,1.025) !important;
 	-webkit-transform: scale(1.025,1.025);
 	opacity: 0.5 !important;
+}
+
+
+.gradient-bg-1{
+	background: linear-gradient(to right,#00d8ad,#d2aaf9)!important;
+	background-size: cover;
+}
+.gradient-bg-2{
+	background: linear-gradient(to right,#3987f4,#cd3178);
+	background-size: cover;
 }
