@@ -95,7 +95,7 @@
 	to{
 		opacity: 0;
 		z-index: -1;
-		transform: scale(0);
+		/*transform: scale(0);*/
 	}
 }
 
