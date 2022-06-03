@@ -184,7 +184,9 @@ header nav ul .nav-link.active .menu-icon .stop-f{
 	transform: scale(1.01);
 	outline: 1px solid rgb(12,1,22);
 }
-
+.modal,.offcanvas{
+	z-index: 99999;
+}
 
 
 
