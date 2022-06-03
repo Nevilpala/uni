@@ -11,61 +11,9 @@
 }
 .lightblue-bg{
     background-color: rgb(233,238,244);
-}
-.fix{
+}.starter-section{
+	/*display: none!important;*/
 	position: fixed;
-	display: none;
-	top: 0;
-	left: 0;
-	z-index: 999;
-	background-color: yellow;
-	width: 100%;
-}
-.fix li a{
-	padding: 0px 20px;
-	margin: 10px 0;
-	font-family: sans-serif;
-}
-.fix .nav-pills .nav-link.active {
-	border-radius: 50px;
-	font-weight: bold;
-}
-
-.header-first{
-	background-color: rgba(0,0,0,0.5);
-	padding: 13px 0;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	z-index: 9999;
-	display: block;
-}
-.header-first ul li a{
-	color: white;
-	font-size: 16px;
-	padding: 5px 20px!important;
-	margin: 0 10px;
-	font-family: sans-serif;
-	text-align: center;
-	border-radius: 25px;
-}
-.header-first ul li .nav-link.active,.header-first ul li .nav-link:hover{
-  	/*background-color: rgb(52,49,72);*/
-  	background-color: rgba(12,2,52,1);
-	overflow: hidden!important;
-	color: white;
-
-}
-@media screen and (max-width:600px){
-	.header-first{
-		top: 0;
-		/*display: none;*/
-	}
-}
-.starter-section{
-	/*display: none;*/
-	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -85,23 +33,79 @@
 	background-position:top left,top right,bottom left, bottom right,center,center center;
 	animation-name: start;
 	animation-duration: 3s;
-	animation-delay: 1s;
+	animation-delay: 2s;
 	animation-fill-mode: forwards;
-	 background-origin: content-box;
+	background-origin: content-box;
+	overflow: hidden;
 }
 @keyframes start{
-	from{
+	0%{
 	}
-	to{
+	100%{
 		opacity: 0;
 		z-index: -1;
-		/*transform: scale(0);*/
+	}
+}
+.loader{
+	width: 200px;
+	height: 200px;
+	border-width: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.loader::after{
+	content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,1);
+	animation-name: loader;
+	animation-duration: 3s;
+	animation-iteration-count: 2;
+}
+@keyframes loader{
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(500px);
 	}
 }
 
+.header-first{
+	background-color: rgba(0,0,0,0.5);
+	padding: 12px 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+	display: block;
+}
+.header-first ul li a{
+	color: white;
+	font-size: 16px;
+	padding: 5px 20px!important;
+	margin: 0 10px;
+	font-family: sans-serif;
+	text-align: center;
+	border-radius: 25px;
+}
+.header-first ul li .nav-link.active,.header-first ul li .nav-link:hover{
+  	background-color: rgba(12,2,52,1);
+	overflow: hidden!important;
+	color: white;
+
+}
+@media screen and (max-width:600px){
+	.header-first{
+		top: 0;
+	}
+}
 
 header{
-	/*background-color: rgba(0,0,0,0.5);*/
 	position: fixed;
 	top: 40%;
 	right: 30px;
@@ -173,12 +177,12 @@ header nav ul .nav-link.active .menu-icon i.stop-f{
 	position: relative;
 }
 .viewmore{
-	transition: all .1s;
+	transition: ease .2s;
 }
 .viewmore:hover{
-	transform: skew(-10deg);
+	transform: scale(1.01);
+	outline: 1px solid rgb(12,1,22);
 }
-
 
 
 
@@ -236,6 +240,7 @@ section{
 	color: rgb(52,49,72);
 	text-align: center;
 	font-weight: 600;
+	height: auto;
 }
 #about h1{
 	color: rgb(255,77,90);
@@ -277,11 +282,11 @@ section{
 
 
 #recent{
-	min-height: 50vh;
 	background-image: url(../img/bg_head.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	height: auto;
 }
 .img-style{
 	transform: rotate(90deg);
@@ -317,7 +322,7 @@ section{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: auto!important;
+	height: auto;
 }
 .web-logo{
 	align-items: center;
@@ -365,19 +370,26 @@ section{
 
 
 #bootstrap {
-	/*background-color: rgb(233,238,244)!important;*/
+	background-image: 	url(../img/bg-top.png),
+						url(../img/bg-bottom-grad.png),
+						url(../img/boot-bg.jpg)
+					;
+	background-position: top,bottom center,center;
+	background-repeat: no-repeat;
+	background-size: 100% auto,100% auto,cover;
+	height: auto;
 }
 .boot_bg{
 	
 }
 .b_title{
-	background-color: rgba(233,238,244,1);
+	background-color: rgba(233,238,244,0.7);
 	margin-bottom: 25px;
 	text-align: center;
 	padding: 50px 0;
 }
 .bootstrap_section{
-	background-color: rgba(233,238,244,1);
+	background-color: rgba(233,238,244,0.7);
 	padding: 30px 0;
 }
 .circle_title{
@@ -431,6 +443,18 @@ section{
 
 /*<!--================================== C =========================================-->*/
 
+
+#c{
+	background-repeat: no-repeat;
+	background-image: 	url(../img/bg-top-grad.png),
+						url(../img/bg-bottom.png),
+						url(../img/services-left-dec.jpg)
+					;
+	background-position: top center,bottom,center;
+	background-size: 100% auto,100% auto,cover;
+	position: relative;
+	height: auto;
+}
 .c_title{
 	background-color: rgba(233,238,244,0.7);
 	margin-bottom: 25px;
@@ -446,17 +470,11 @@ section{
 	font-size: 30px;
 	font-weight: 500;
 }
-.c_section{
-	background-repeat: no-repeat,no-repeat,no-repeat;
-	background-image:url(../img/com.jpg);
-	background-position: center;
-	background-size: cover;
-}
 .c_section h1{
 	color: white;
 }
 .cmd{
-	background-color: rgba(233,238,244,0.5)!important;
+	background-color: rgba(233,238,244,0.7)!important;
 }
 .myCbtn{
 	background-color: rgb(52,49,72);
@@ -506,11 +524,12 @@ section{
 
 #contact{
 	min-height: 40vh;
-	background-image: url(../images/blog-thumb-01.jpg);
-	/*background-image: url(../img/contact-bg.jpg);*/
+	background-color: rgb(12,1,22);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+}
+footer .foot-section{
 }
 .mail a:hover span{
 	opacity: 0.91;
@@ -541,10 +560,10 @@ footer ul li a{
 	color: white;
 }
 .foot-link li a:hover{
-	color: rgb(12,1,22);
+	color: lightblue;
 	transition: all .2s;
 	margin-left: 5px;
-	border-bottom: 1px dotted rgb(12,1,22);
+	border-bottom: 1px dotted lightblue;
 }
 .contact_form input,textarea{
 	width: 100%;

@@ -105,7 +105,7 @@ button.btn-menu{
 	background-color: blue; 
 	width: 50px;
 	height: 5px;
-	transition: all .5s;
+	transition: all .3s;
 }
 .box-btn .btn-nav::after{ 
 	position: absolute;
@@ -114,7 +114,7 @@ button.btn-menu{
 	top: 5px; 
 	border-radius: 5px; 
 	background-color: red; 
-	transition: all .5s;
+	transition: all .3s;
 	height: 5px;
 	left: 0; 
 }
@@ -145,8 +145,8 @@ button.btn-menu{
 
 	transform:translate(0px, 17.5px);
 	animation-name: hi; 
-	animation-duration: .5s;
-	animation-delay: .5s;
+	animation-duration: .4s;
+	animation-delay: .2s;
 	animation-fill-mode: forwards;
 }
 @keyframes hi{
@@ -159,8 +159,8 @@ button.btn-menu{
 .box-btn input:checked~.btn-nav::before{
 	transform: translate(0px, -17.5px);
 	animation-name: hi2; 
-	animation-duration: .5s;
-	animation-delay: .5s;
+	animation-duration: .4s;
+	animation-delay: .2s;
 	animation-fill-mode: forwards;
 }
 @keyframes hi2{
@@ -205,6 +205,6 @@ button.btn-menu{
 	background-size: cover;
 }
 .gradient-bg-2{
-	background: linear-gradient(to right,#3987f4,#cd3178);
+	background: linear-gradient(to right,#3987f4,#cd3178)!important;
 	background-size: cover;
 }
