@@ -20,7 +20,7 @@
 	height: 100vh;
 	padding: 25px;
 	background-color: white;
-	z-index: 99999;
+	z-index: 999999;
 	background-image:	url(../img/html.png),
 						url(../img/css.png),
 						url(../img/js.png),
@@ -99,9 +99,9 @@
 	color: white;
 
 }
-@media screen and (max-width:600px){
-	.header-first{
-		top: 0;
+@media screen and (max-width:769px){
+		.header-first ul li{
+		width: 100%
 	}
 }
 
@@ -111,14 +111,13 @@ header{
 	right: 30px;
 	z-index: 99999;
 	border-radius: 20px;
-	text-align: center;
-}
+	text-align: center;}
 header nav ul li a{
 	color: white!important;
 	font-family: cursive;
 	display: flex!important;
 	justify-content: space-between;
-	align-items: flex-end!important;
+	align-items: center!important;
 	font-size: 13px;
 }
 header nav ul li a .nav-hover{
@@ -133,6 +132,8 @@ header nav ul{
 	background-color: rgba(0,0,0,0.5);
 	display: block!important;
 	border-radius: 20px;
+	padding-bottom: 5px;
+
 }
 .home-icon{
 	width: 10px;
@@ -160,14 +161,14 @@ header nav  ul:hover .nav-hover{
 header nav ul .nav-link.active{
 	background-color: transparent!important;
 }
-header nav ul .nav-link.active .nav-hover{
+header nav ul .nav-link.active .nav-hover,header nav ul .nav-link:hover .nav-hover{
 	font-weight: bold!important;
 	color: red!important;
 }
-header nav ul .nav-link.active .menu-icon i.stop{
+header nav ul .nav-link.active .menu-icon .stop{
 	display: none;
 }
-header nav ul .nav-link.active .menu-icon i.stop-f{
+header nav ul .nav-link.active .menu-icon .stop-f{
 	display: block;
 }
 .scroll-menu{
@@ -203,8 +204,8 @@ section{
 	background-image: url(../img/banner.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	background-position: center left;
-	min-height: 100vh;
+	background-position: center left!;
+	height: 100vh;
 	position: relative;
 }
 .welcome{
@@ -212,17 +213,29 @@ section{
 	align-items: center;
 }
 .welcome div{
-	padding: 5%;
+	padding: 5% ;
 	color: white;
 }
 .home-head-bg{
 	background-color: rgb(255,77,90);
 	height: 15px;
 }
-@media screen and (max-width:576px){
+@media screen and (max-width:768px){
 	#home{
+		height: auto!important;
 		background-size: cover;
 	}
+
+}
+
+@media screen and (width:768px){
+	#home{
+		height: 100vh!important;
+		background-size: cover;
+	}
+
+}
+@media screen and (max-width:576px){
 	.welcome{
 		margin-top: 80px;
 	}
