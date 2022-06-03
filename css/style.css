@@ -546,6 +546,10 @@ section{
 	background-position: center center;
 }
 footer .foot-section{
+	overflow: hidden;
+}
+footer .row{
+	margin: 0;
 }
 .mail a:hover span{
 	opacity: 0.91;

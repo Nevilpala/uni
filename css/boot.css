@@ -13,20 +13,25 @@
 	background-size: cover;
 	background-position: center;
 }
-#boot-template{
+#cb-template{
 	background-image: url(../img/b-left-dec.jpg),url(../img/b-right-dec.jpg);
 	background-repeat: no-repeat;
 	background-position: left,right;
 	background-size: 60% 100%,40% 100%;
+}
+@media screen and (max-width: 600px){
+	#cb-about{
+		height: 30vh;
+	}
 }
 .breadcrumb{
 	padding-top: 15px;
 }
 .bread-home{
 	color: rgb(25,33,56);
+	font-weight: 500;
 }
 .bread-home:hover{
-	font-weight: 400;
 	color: red;
 }
 .myrow{
