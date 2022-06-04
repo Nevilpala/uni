@@ -11,8 +11,9 @@
 }
 .lightblue-bg{
     background-color: rgb(233,238,244);
-}.starter-section{
-	display: none!important;
+}
+.starter-section{
+	/*display: none!important;*/
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -64,6 +65,9 @@
 	animation-name: loader;
 	animation-duration: 3s;
 	animation-iteration-count: 2;
+}
+.starter-section::after{
+	clear: both;
 }
 @keyframes loader{
 	0%{
