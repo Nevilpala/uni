@@ -12,7 +12,7 @@
 .lightblue-bg{
     background-color: rgb(233,238,244);
 }.starter-section{
-	/*display: none!important;*/
+	display: none!important;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -200,6 +200,9 @@ section{
 	overflow: hidden!important;
 	position: relative;
 }
+.scroll-menu section::after{
+	clear: both;
+}
 
 /*<!--================================== HOME =========================================-->*/
 
@@ -212,7 +215,7 @@ section{
 	position: relative;
 }
 .welcome{
-	height: 98%;
+	height: 100%;
 	align-items: center;
 }
 .welcome div{
@@ -541,12 +544,6 @@ section{
 #contact{
 	min-height: 40vh;
 	background-color: rgb(12,1,22);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-}
-footer .foot-section{
-	overflow: hidden;
 }
 footer .row{
 	margin: 0;
