@@ -13,7 +13,7 @@
     background-color: rgb(233,238,244);
 }
 .starter-section{
-	/*display: none!important;*/
+	display: none!important;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -105,7 +105,8 @@
 }
 @media screen and (max-width:769px){
 		.header-first ul li{
-		width: 100%
+		width: 100%;
+		margin-top:10px;
 	}
 }
 
@@ -177,7 +178,7 @@
 	display: block;
 }
 .scroll-menu{
-	height: 100vh;
+	height: 100vh;	
 	overflow-x: hidden;
 	overflow-y: scroll;
 	position: relative;
@@ -445,23 +446,45 @@ section{
 	-webkit-transition: all ease-in-out 500ms;
 	max-width: 100%;
 	min-height: 100%;
+	position: relative;
+	z-index: 99;
+}
+.zoom a::after{
+	content: ' ';
+	position: absolute;
+	z-index: 0;
+	top: calc(50% - 20px);
+	left: calc(50% - 20px);
+	background-image: url(../img/loading.gif);
+	height: 40px;
+	width: 40px	;
+	background-position: center;
+	background-repeat: no-repeat;
+
 }
 .zoom:hover img{
-	transform: scale(1.05,1.05) !important;
-	-webkit-transform: scale(1.05,1.05);
-	opacity: 0.55 !important;
+	transform: scale(1.055,1.055) !important;
+	-webkit-transform: scale(1.055,1.055);
+	/*opacity: 0.55 !important;*/
 }
 .zoom:hover .On_img_text{
 	position: absolute;
-	top: calc(50% - 10px);
+	/*top: calc(50% - 10px);*/
+	top:0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	line-height: 100%;
 	font-size: 20px;
 	left: 0;
 	text-align:center;
 	width: 100%; 
 	font-weight: bold;
 	font-family: sans-serif;
-  	background-color: transparent;
+  	background-color: rgba(0,0,0,0.5);
   	color: white;
+  	z-index: 991;
 }
 
 /*<!--================================== C =========================================-->*/
