@@ -13,7 +13,7 @@
     background-color: rgb(233,238,244);
 }
 .starter-page{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -32,7 +32,7 @@
 	background-size: 140px,110px,120px,120px,150px,cover;
 	background-position:top left,top right,bottom left, bottom right,center,center center;
 	animation-name: start;
-	animation-duration: 3s;
+	animation-duration: 4s;
 	animation-delay: 2s;
 	animation-fill-mode: forwards;
 	background-origin: content-box;
@@ -52,8 +52,8 @@
 	position: relative;
 	overflow: hidden;
 }
-.loader::after{
-	content: ' ';
+.loader::before{
+	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -69,7 +69,8 @@
 		transform: translateX(0);
 	}
 	100%{
-		transform: translateX(500px);
+		transform: translateX(300px);
+		visibility: hidden;
 	}
 }
 
@@ -172,12 +173,6 @@
 #index-header nav ul .nav-link.active .menu-icon .stop-f{
 	display: block;
 }
-.scroll-menu{
-	height: 100vh;	
-	overflow-x: hidden;
-	overflow-y: scroll;
-	position: relative;
-}
 .viewmore{
 	transition: ease .2s;
 }
@@ -188,7 +183,15 @@
 .modal,.offcanvas{
 	z-index: 99999;
 }
-
+.scroll-menu{
+	height: 100vh;	
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: relative;
+}
+.starter-page::before,.starter-page::after{
+	clear: both;
+}
 
 
 
@@ -199,9 +202,6 @@
 section{
 	overflow: hidden!important;
 	position: relative;
-}
-.scroll-menu section::before{
-	clear: both;
 }
 
 /*<!--================================== HOME =========================================-->*/
